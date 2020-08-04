@@ -53,7 +53,7 @@ const path = require('path');
 
 
 
-fs.writeFile(path.join(__dirname, 'url_demo.js'), '', err => {
+fs.writeFile(path.join(__dirname, 'events_demo.js'), '', err => {
     if (err) {
         throw err;
     } else {
