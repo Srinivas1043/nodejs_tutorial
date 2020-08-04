@@ -40,11 +40,23 @@ const path = require('path');
 // });
 
 //Rename a file
-fs.rename(path.join(__dirname, '/test', 'hello_world.txt'), path.join(__dirname, '/test', 'hello_world_again.txt'), err => {
+// fs.rename(path.join(__dirname, '/test', 'hello_world.txt'), path.join(__dirname, '/test', 'hello_world_again.txt'), err => {
+//     if (err) {
+//         throw err;
+//     } else {
+//         console.log('File is renamed');
+
+//     }
+// });
+
+
+
+
+
+fs.writeFile(path.join(__dirname, 'url_demo.js'), '', err => {
     if (err) {
         throw err;
     } else {
-        console.log('File is renamed');
-
+        console.log('file created..');
     }
 });
